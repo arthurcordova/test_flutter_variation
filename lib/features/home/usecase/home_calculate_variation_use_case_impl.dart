@@ -9,7 +9,7 @@ class HomeCalculateVariationUseCaseImpl extends HomeCalculateVariationUseCase {
     final dayOnePrice = params.first;
 
     params.asMap().forEach((key, value) {
-      final currentPrice = params[key];
+      final currentPrice = value;
       if (key == 0) {
         items.add(VariationItem(currentPrice, 0, 0, key));
         return;
